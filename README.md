@@ -2,9 +2,9 @@
 
 | Bintray | Windows | Linux & macOS |
 |:--------:|:---------:|:-----------------:|
-|[ ![Download](https://api.bintray.com/packages/bincrafters/public-conan/glm%3Ag-truc/images/download.svg) ](https://bintray.com/bincrafters/public-conan/glm%3Ag-truc/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-glm?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-glm)|[![Build Status](https://travis-ci.org/bincrafters/conan-glm.svg)](https://travis-ci.org/bincrafters/conan-glm)|
+|[ ![Download](https://api.bintray.com/packages/bincrafters/public-conan/glm%3Ag-truc/images/download.svg) ](https://bintray.com/bincrafters/public-conan/glm%3Ag-truc/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-glm?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-glm)|[![Build Status](https://travis-ci.com/bincrafters/conan-glm.svg)](https://travis-ci.com/bincrafters/conan-glm)|
 
-## Conan.io Information
+## Conan Information
 
 Bincrafters packages can be found in the following public Conan repository:
 
