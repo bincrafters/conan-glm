@@ -1,0 +1,43 @@
+diff --git a/glm/simd/platform.h b/glm/simd/platform.h
+index a5510be..7cebe99 100644
+--- a/glm/simd/platform.h
++++ b/glm/simd/platform.h
+@@ -111,7 +111,9 @@
+ #define GLM_COMPILER_GCC70			0x02000A00
+ #define GLM_COMPILER_GCC71			0x02000B00
+ #define GLM_COMPILER_GCC72			0x02000C00
+-#define GLM_COMPILER_GCC80			0x02000D00
++#define GLM_COMPILER_GCC73			0x02000D00
++#define GLM_COMPILER_GCC74			0x02000E00
++#define GLM_COMPILER_GCC80			0x02000F00
+ 
+ // CUDA
+ #define GLM_COMPILER_CUDA			0x10000000
+@@ -283,6 +285,10 @@
+ #		define GLM_COMPILER (GLM_COMPILER_GCC71)
+ #	elif (__GNUC__ == 7) && (__GNUC_MINOR__ == 2)
+ #		define GLM_COMPILER (GLM_COMPILER_GCC72)
++#	elif (__GNUC__ == 7) && (__GNUC_MINOR__ == 3)
++#		define GLM_COMPILER (GLM_COMPILER_GCC73)
++#	elif (__GNUC__ == 7) && (__GNUC_MINOR__ == 4)
++#		define GLM_COMPILER (GLM_COMPILER_GCC74)
+ #	elif (__GNUC__ >= 8)
+ #		define GLM_COMPILER (GLM_COMPILER_GCC80)
+ #	else
+diff --git a/test/core/core_setup_message.cpp b/test/core/core_setup_message.cpp
+index 1e6a5d0..2c4f82e 100644
+--- a/test/core/core_setup_message.cpp
++++ b/test/core/core_setup_message.cpp
+@@ -86,6 +86,12 @@ int test_compiler()
+ 		case GLM_COMPILER_GCC72:
+ 			std::printf("GCC 7.2\n");
+ 			break;
++		case GLM_COMPILER_GCC73:
++			std::printf("GCC 7.3\n");
++			break;
++		case GLM_COMPILER_GCC74:
++			std::printf("GCC 7.4\n");
++			break;
+ 		case GLM_COMPILER_GCC80:
+ 			std::printf("GCC 8.0\n");
+ 			break;
