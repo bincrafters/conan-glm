@@ -6,7 +6,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-find_package(GLM 0.9.8.5 REQUIRED)
+find_package(glm 0.9.9 REQUIRED)
 
 file(GLOB SOURCE_FILES *.cpp)
 
